@@ -117,7 +117,7 @@ const Navbar = ({ onRegisterClick }: NavbarProps) => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[280px] bg-background shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 h-full w-full bg-background shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
