@@ -63,20 +63,24 @@ const Schedule = () => {
 
             <div className="bg-background rounded-3xl shadow-xl overflow-hidden border border-border/50 hover:shadow-2xl transition-shadow">
               <div className="grid md:grid-cols-5 gap-0">
-                {/* Map Preview */}
-                <div className="md:col-span-2 relative h-64 md:h-auto min-h-[300px]">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.8267895!2d73.7392!3d15.4954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDI5JzQzLjQiTiA3M8KwNDQnMjEuMSJF!5e0!3m2!1sen!2sin!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="absolute inset-0"
-                    title="Maverick & Farmer Anjuna Location"
+                {/* Location Image Preview */}
+                <a
+                  href="https://maps.app.goo.gl/Q4AEaXLL6wdo5xbL8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="md:col-span-2 relative h-64 md:h-auto min-h-[300px] overflow-hidden group cursor-pointer"
+                >
+                  <img
+                    src="/mav_farmer.png"
+                    alt="Maverick & Farmer Anjuna Location"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                </div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/95 rounded-full p-3 shadow-lg">
+                      <MapPin className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                </a>
 
                 {/* Location Details */}
                 <div className="md:col-span-3 p-6 sm:p-8 lg:p-10 space-y-6">
