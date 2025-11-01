@@ -7,7 +7,7 @@ This is a landing page for Poai's Tech-For-Good Hackathon event, built with Reac
 
 ## Event Details
 - **Event Name**: Tech-For-Good Hackathon by Poai
-- **Date**: November 15th, 2024 (Saturday)
+- **Date**: November 15th, 2025 (Saturday)
 - **Time**: 10:00 AM - 6:30 PM
 - **Venue**: Maverick & Farmer, Anjuna, Goa
 - **Location**: In-person + Online hybrid
@@ -109,7 +109,7 @@ Poai is an AI Product & Community collective based in Goa. The name 'Poai' is in
 - **Tech's Role**: Use simple data inputs or digital tracking to help individuals notice patterns in their sustainable practices and celebrate mindful behaviour
 - **Outcome**: A supportive, engaging system that encourages ongoing commitment to conscious living without pressure or judgement
 
-## Event Schedule (November 15, 2024)
+## Event Schedule (November 15, 2025)
 - 9:30-10:00 - Registration
 - 10:00-10:15 - Introduction to Poai, Hackathon overview
 - 10:15-10:30 - Speed Networking

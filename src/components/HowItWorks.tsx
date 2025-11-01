@@ -91,7 +91,7 @@ const HowItWorks = () => {
                     <h3 className="text-2xl sm:text-3xl font-bold text-foreground">What You'll Build</h3>
                   </div>
                   <p className="text-base sm:text-lg text-foreground/80 leading-relaxed pl-1">
-                    Submit a published link to a <span className="font-semibold text-foreground">website, app, or presentation</span> created using bolt.new.
+                    Submit a published link to a <span className="font-semibold text-foreground">website, app, or presentation</span> created using bolt.new, which can be of a product, process or any other 'framing' that best explains your concept / solution.
                   </p>
                   <p className="text-sm text-muted-foreground pl-1 italic">
                     Focus on demonstrating your idea - perfection not required!
