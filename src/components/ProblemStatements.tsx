@@ -34,40 +34,36 @@ const ProblemStatements = ({ onRegisterClick }: ProblemStatementsProps) => {
     },
     {
       id: "2a",
-      title: "Home/Commercial Waste - Challenge 1",
-      focus: "Details to be announced",
-      stage: "",
-      item: "",
-      techRole: "Challenge details coming soon",
-      outcome: "",
-      placeholder: true,
+      title: "Sustainable Habits - Digital Cues for Everyday Living",
+      focus: "Encouraging everyday sustainable habits through digital cues.",
+      stage: "During daily routine planning and movement.",
+      item: "A personal digital reminder experience.",
+      techRole: "Explore gentle, context-aware prompts that support users in remembering sustainable choices as they go about their day.",
+      outcome: "Users naturally build mindful habits through subtle nudges and reflection.",
     },
     {
       id: "2b",
-      title: "Home/Commercial Waste - Challenge 2",
-      focus: "Details to be announced",
-      stage: "",
-      item: "",
-      techRole: "Challenge details coming soon",
-      outcome: "",
-      placeholder: true,
+      title: "Conscious Consumption - Long-term Engagement & Progress Tracking",
+      focus: "Building long-term engagement with conscious consumption.",
+      stage: "After actions or purchases across a period of time.",
+      item: "A personal progress and reflection experience.",
+      techRole: "Use simple data inputs or digital tracking to help individuals notice patterns in their sustainable practices and celebrate mindful behaviour.",
+      outcome: "A supportive, engaging system that encourages ongoing commitment to conscious living without pressure or judgement.",
     },
   ];
 
   return (
-    <section className="py-20 bg-card">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
-              Problem Statements
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Choose your challenge and make an impact
-            </p>
-          </div>
+    <div className="space-y-12">
+      <div className="text-center space-y-4">
+        <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
+          Problem Statements
+        </h2>
+        <p className="text-lg text-muted-foreground">
+          Choose your challenge and make an impact
+        </p>
+      </div>
 
-          <Accordion type="single" collapsible className="space-y-4">
+      <Accordion type="single" collapsible className="space-y-4">
             {problems.map((problem) => (
               <AccordionItem
                 key={problem.id}
@@ -119,20 +115,18 @@ const ProblemStatements = ({ onRegisterClick }: ProblemStatementsProps) => {
                 </AccordionContent>
               </AccordionItem>
             ))}
-          </Accordion>
+      </Accordion>
 
-          <div className="text-center pt-8">
-            <Button
-              onClick={onRegisterClick}
-              size="lg"
-              className="rounded-full px-10 text-lg shadow-lg hover:shadow-xl transition-all"
-            >
-              Register for Your Challenge
-            </Button>
-          </div>
-        </div>
+      <div className="text-center pt-8">
+        <Button
+          onClick={onRegisterClick}
+          size="lg"
+          className="rounded-full px-10 text-lg shadow-lg hover:shadow-xl transition-all"
+        >
+          Register for Your Challenge
+        </Button>
       </div>
-    </section>
+    </div>
   );
 };
 

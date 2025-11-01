@@ -1,6 +1,7 @@
 import aparnaPortrait from "@/assets/aparna-portrait-optimized.webp";
 import krishnaPortrait from "@/assets/krishna-portrait-optimized.webp";
 import karnPortrait from "@/assets/karn-portrait-optimized.webp";
+import indranilRabiaPortrait from "@/assets/indranil-rabia.jpeg";
 import { Linkedin } from "lucide-react";
 
 const ChallengeChampions = () => {
@@ -26,10 +27,24 @@ const ChallengeChampions = () => {
       bio: "The founder of ThisIsCreativeAi, his present focus is 'Founder Led Marketing' for tech founders and 'Leadership Branding' for corporate executives. A 3x founder, his core experience over 20+ years is in Marketing, Entrepreneurship & Product Building. He previously ran 9 editions of 'Designothon' - a 'design for good' initiative to help NGO's in a 1 day hackathon format; impacting 100+ NGO's through 400+ creators. He is also the India Lead of Asia Startup Network and now building Poai in Goa.",
       linkedin: "https://www.linkedin.com/in/karnmalhotra/",
     },
+    {
+      name: "Indranil Sengupta",
+      title: "Co-founder, #MahimBeachCleanUp & Ethico India",
+      image: indranilRabiaPortrait,
+      bio: "He, along with his wife Rabia Tewari, is a co-founder of the #MahimBeachCleanUp and Ethico India. Formerly AVP Marketing and Brand Management and Business Head non music IPs at Viacom18, in 2017 he started his own multi-disciplinary design and brand consultancy firm called IS Network. He was also playing an advisory role at a not-for-profit Mann.org.in and Karmann that creates livelihood opportunities for persons with IDD, Autism and Down syndrome.",
+      linkedin: "https://www.linkedin.com/in/indranilsengupta/",
+    },
+    {
+      name: "Rabia Tewari",
+      title: "Co-founder, #MahimBeachCleanUp & Ethico India",
+      image: indranilRabiaPortrait,
+      bio: "She, along with her husband Indranil Sengupta, is the co-founder of the #MahimBeachCleanUp, an initiative felicitated by the UN Environment in June 2018 and also the co-founder of Ethico India. She began her career in New York and was a Product Manager for various American apparel brands for 12 years. She moved to India in 2011 and was the Business Head for a bespoke design studio.",
+      linkedin: "https://www.linkedin.com/in/rabiatewari/",
+    },
   ];
 
   return (
-    <section className="py-20 bg-card">
+    <section id="champions" className="py-20 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4">
@@ -41,7 +56,7 @@ const ChallengeChampions = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {champions.map((champion, index) => (
               <div
                 key={index}
