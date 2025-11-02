@@ -71,7 +71,7 @@ const WhoThisIsFor = () => {
           {/* Target Audience */}
           <div className="text-center pt-4">
             <p className="text-lg text-foreground/80">
-              <span className="font-semibold">Perfect for:</span> Developers, Designers, Product Managers, Strategists, or anyone curious about AI
+              <span className="font-semibold">Perfect for:</span> Founders, Developers, Designers, Product Managers, Strategists, or anyone curious about AI
             </p>
           </div>
         </div>
