@@ -6,7 +6,7 @@ const Schedule = () => {
     { time: "9.30-10.00", event: "Registration" },
     { time: "10.00-10.15", event: "Introduction to Poai, Hackathon overview" },
     { time: "10.15-10.30", event: "Speed Networking" },
-    { time: "10.30-11.00", event: "2 Challenge Champions detail out the challenges (Aparna & ...)" },
+    { time: "10.30-11.00", event: "2 Challenge Champions detail out the challenges (Aparna, Indranil & Rabia)" },
     { time: "11.00-11.45", event: "Vibe Coding with Krishna Goutham" },
     { time: "11.45-12.00", event: "Break" },
     { time: "12.00-17.00", event: "Hackathon", highlight: true },
