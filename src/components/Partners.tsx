@@ -17,7 +17,7 @@ const Partners = () => {
     {
       name: "Asia Startup Network",
       role: "Ecosystem Partner",
-      logo: "/ASN Colour-White.avif",
+      logo: "/ASN Colour-Grey.png",
       url: "https://www.asiastartupnetwork.com/",
       category: "ecosystem"
     },
