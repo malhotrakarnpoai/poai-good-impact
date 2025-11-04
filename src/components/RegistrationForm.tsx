@@ -345,8 +345,8 @@ const RegistrationForm = () => {
                           {[
                             { id: "fashion-circular", label: "Fashion Waste: Circular Design - Pre-Production & Concept Stage" },
                             { id: "fashion-postconsumer", label: "Fashion Waste: Post-Consumer Waste Management & Segregation" },
-                            { id: "sustainable-habits", label: "Sustainable Habits: Digital Cues for Everyday Living" },
-                            { id: "conscious-consumption", label: "Conscious Consumption: Long-term Engagement & Progress Tracking" },
+                            { id: "sustainable-habits", label: "Home Waste - Sustainable Habits : Digital Cues for Everyday Living" },
+                            { id: "conscious-consumption", label: "Home Waste - Conscious Consumption : Long-term Engagement & Progress Tracking" },
                           ].map((item) => (
                             <FormField
                               key={item.id}
