@@ -13,7 +13,7 @@ const WhoThisIsFor = () => {
     {
       icon: "🤝",
       title: "Expert Mentors",
-      description: "UN-recognized sustainability leaders"
+      description: "U.N. recognised sustainability leaders"
     },
     {
       icon: "💰",

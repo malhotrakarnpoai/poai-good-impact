@@ -31,7 +31,7 @@ const Partners = () => {
     {
       name: "Ethico",
       role: "Community Outreach",
-      logo: "/Ethico-Color-logo.png",
+      logo: "/Ethico-Color-logo.jpeg",
       url: "https://www.ethicoindia.com/",
       category: "community"
     }

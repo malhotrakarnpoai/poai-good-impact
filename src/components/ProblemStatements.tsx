@@ -34,7 +34,7 @@ const ProblemStatements = ({ onRegisterClick }: ProblemStatementsProps) => {
     },
     {
       id: "2a",
-      title: "Sustainable Habits - Digital Cues for Everyday Living",
+      title: "Home Waste - Sustainable Habits : Digital Cues for Everyday Living",
       focus: "Encouraging everyday sustainable habits through digital cues.",
       stage: "During daily routine planning and movement.",
       item: "A personal digital reminder experience.",
@@ -43,7 +43,7 @@ const ProblemStatements = ({ onRegisterClick }: ProblemStatementsProps) => {
     },
     {
       id: "2b",
-      title: "Conscious Consumption - Long-term Engagement & Progress Tracking",
+      title: "Home Waste - Conscious Consumption : Long-term Engagement & Progress Tracking",
       focus: "Building long-term engagement with conscious consumption.",
       stage: "After actions or purchases across a period of time.",
       item: "A personal progress and reflection experience.",
