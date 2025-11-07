@@ -1,7 +1,8 @@
 import aparnaPortrait from "@/assets/aparna-portrait-optimized.webp";
 import krishnaPortrait from "@/assets/krishna-portrait-optimized.webp";
 import karnPortrait from "@/assets/karn-portrait-optimized.webp";
-import indranilRabiaPortrait from "@/assets/indranil-rabia.jpeg";
+import indranilPortrait from "@/assets/indranil.jpeg";
+import rabiaPortrait from "@/assets/rabia.jpeg";
 import { Linkedin } from "lucide-react";
 
 const ChallengeChampions = () => {
@@ -30,14 +31,14 @@ const ChallengeChampions = () => {
     {
       name: "Indranil Sengupta",
       title: "Co-founder, #MahimBeachCleanUp & Ethico India",
-      image: indranilRabiaPortrait,
+      image: indranilPortrait,
       bio: "He, along with his wife Rabia Tewari, is a co-founder of the #MahimBeachCleanUp and Ethico India. Formerly AVP Marketing and Brand Management and Business Head non music IPs at Viacom18, in 2017 he started his own multi-disciplinary design and brand consultancy firm called IS Network. He was also playing an advisory role at a not-for-profit Mann.org.in and Karmann that creates livelihood opportunities for persons with IDD, Autism and Down syndrome.",
       linkedin: "https://www.linkedin.com/in/indranilsengupta/",
     },
     {
       name: "Rabia Tewari",
       title: "Co-founder, #MahimBeachCleanUp & Ethico India",
-      image: indranilRabiaPortrait,
+      image: rabiaPortrait,
       bio: "She, along with her husband Indranil Sengupta, is the co-founder of the #MahimBeachCleanUp, an initiative felicitated by the UN Environment in June 2018 and also the co-founder of Ethico India. She began her career in New York and was a Product Manager for various American apparel brands for 12 years. She moved to India in 2011 and was the Business Head for a bespoke design studio.",
       linkedin: "https://www.linkedin.com/in/rabiatewari/",
     },
