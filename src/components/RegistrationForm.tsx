@@ -37,9 +37,8 @@ const formSchema = z.object({
   aiQuestions: z.string().optional(),
   challenges: z.array(z.string()).min(1, "Please select at least one challenge to work on"),
   teamName: z.string().optional(),
-  consent: z.boolean().refine((val) => val === true, {
-    message: "You must consent to data storage to proceed",
-  }),
+  consent: z.boolean(),
+  whatsappConsent: z.boolean(),
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -60,7 +59,8 @@ const RegistrationForm = () => {
       aiQuestions: "",
       challenges: [],
       teamName: "",
-      consent: false,
+      consent: true,
+      whatsappConsent: true,
     },
   });
 
@@ -81,6 +81,7 @@ const RegistrationForm = () => {
         challenges: data.challenges.join(", "),
         teamName: data.teamName || "",
         consent: data.consent,
+        whatsappConsent: data.whatsappConsent,
         timestamp: new Date().toISOString(),
       };
       
@@ -422,6 +423,28 @@ const RegistrationForm = () => {
                         <div className="space-y-1 leading-none">
                           <FormLabel className="text-sm text-foreground/90 font-normal cursor-pointer">
                             I consent to Poai storing my details for event communications
+                          </FormLabel>
+                          <FormMessage />
+                        </div>
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="whatsappConsent"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-lg bg-muted/30 p-5 border border-border/50">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                            className="mt-0.5"
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel className="text-sm text-foreground/90 font-normal cursor-pointer">
+                            I consent to add me to the WhatsApp group for quicker communications regarding the hackathon
                           </FormLabel>
                           <FormMessage />
                         </div>
