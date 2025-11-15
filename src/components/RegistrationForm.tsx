@@ -46,6 +46,7 @@ type FormData = z.infer<typeof formSchema>;
 const RegistrationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const isRegistrationClosed = true; // Set to false to re-open registration
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -131,6 +132,34 @@ const RegistrationForm = () => {
     
     window.open(googleCalendarUrl, '_blank');
   };
+
+  // Show registration closed message
+  if (isRegistrationClosed) {
+    return (
+      <section id="register" className="py-20 scroll-mt-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-card rounded-3xl shadow-card p-12 text-center space-y-6">
+              <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto">
+                <svg className="w-10 h-10 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h2 className="text-4xl font-bold text-foreground">
+                Registration Closed
+              </h2>
+              <p className="text-lg text-foreground/80">
+                Thank you for your interest! Registration for the hackathon has now closed as we're getting started.
+              </p>
+              <p className="text-md text-foreground/70">
+                Keep watching this space for updates and future events from Poai!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   if (isSubmitted) {
     return (
